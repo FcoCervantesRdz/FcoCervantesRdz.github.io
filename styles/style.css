@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+.body{
+    width: 100vw;
+}
+.nav{
+    position:fixed;
+    top: 25%;
+    height: 50%;
+    right: -20px;
+}
+.nav_list{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    list-style: none;
+}
+.nav_el{
+    margin: 1px 0px;
+    width: 100%;
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0.708);
+    padding: 10px;
+    border-radius: 20px;
+    transition: width 1s;
+}
+.nav_el:hover{
+    width: 180%;
+}
+.section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Hero{
+    background: rgb(1,56,108);
+    background: linear-gradient(0deg, rgba(1,56,108,1) 0%, rgba(14,53,166,1) 100%);
+}
+.name_desc{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    justify-content: center;
+}
+.name{
+    font-size: 8vw;
+}
+.hero_imgs{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hero_img{
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
+#h_py{
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#h_an{
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+#h_ml{
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+#h_en{
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.h_svg{
+    width: 70%;
+    margin: 2px;
+    /* transition: width 0.5s;
+    transition-timing-function: ease-out; */
+}
+/* .h_svg:hover{
+    width: 75%
+} */
+#py_svg{
+    animation-name: h_py;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#an_svg{
+    animation-name: h_an;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#ml_svg{
+    animation-name: h_ml;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#en_svg{
+    animation-name: h_en;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes h_py{
+    0%      {width: 75%;}
+    12.5%   {width: 75%;}
+    25%     {width: 70%;}
+    37.5%   {width: 70%;}
+    50%     {width: 70%;}
+    62.5%   {width: 70%;}
+    75%     {width: 70%;}
+    87.5%   {width: 70%;}
+    100%    {width: 75%;}
+}
+@keyframes h_an{
+    0%      {width: 70%;}
+    12.5%   {width: 70%;}
+    25%     {width: 75%;}
+    37.5%   {width: 75%;}
+    50%     {width: 70%;}
+    62.5%   {width: 70%;}
+    75%     {width: 70%;}
+    87.5%   {width: 70%;}
+    100%    {width: 70%;}
+}
+@keyframes h_en{
+    0%      {width: 70%;}
+    12.5%   {width: 70%;}
+    25%     {width: 70%;}
+    37.5%   {width: 70%;}
+    50%     {width: 75%;}
+    62.5%   {width: 75%;}
+    75%     {width: 70%;}
+    87.5%   {width: 70%;}
+    100%    {width: 70%;}
+}
+@keyframes h_ml{
+    0%      {width: 70%;}
+    12.5%   {width: 70%;}
+    25%     {width: 70%;}
+    37.5%   {width: 70%;}
+    50%     {width: 70%;}
+    62.5%   {width: 70%;}
+    75%     {width: 75%;}
+    87.5%   {width: 75%;}
+    100%    {width: 70%;}
+}
